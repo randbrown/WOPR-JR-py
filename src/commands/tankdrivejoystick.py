@@ -15,7 +15,8 @@ class TankDriveJoystick(TimedCommand):
         self.requires(subsystems.drive)
 
     def initialize(self):
-        subsystems.drive.set(self.Lpow, self.Rpow)
+        
+        subsystems.drive.set(oi.joystick, self.Rpow)
 
     def end(self):
         subsystems.drive.set(0, 0)
