@@ -9,7 +9,7 @@ class TankDriveTimed(TimedCommand):
     '''
 
     def __init__(self, timeout, Lpow, Rpow):
-        super().__init__('Tank Drive Timed %d' % (Lpow, Rpow), timeout)
+        super().__init__('Tank Drive Timed %s, %s' % (Lpow, Rpow), timeout)
 
         self.Lpow = Lpow
         self.Rpow = Rpow

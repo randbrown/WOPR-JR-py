@@ -14,4 +14,4 @@ class AutonomousProgram(CommandGroup):
 
         self.addSequential(TankDriveTimed(1, .5, .5))
         self.addSequential(WaitCommand(timeout=1))
-        self.addSequential(SetSpeed(1, -1, .8))
+        self.addSequential(TankDriveTimed(1, -.5, .5))
