@@ -24,6 +24,9 @@ class WOPRJR(CommandBasedRobot):
     def teleopInit(self):
         self.teleopProgram.start()
 
+    def teleopPeriodic(self):
+        subsystems.dumpInfo()
+
 
 if __name__ == '__main__':
     wpilib.run(WOPRJR)
